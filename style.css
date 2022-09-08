@@ -1,0 +1,229 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(228, 224, 224);
+  
+  color: white;
+}
+/*header*/
+header {
+  width: 100%;
+  margin: 1.5em 0em;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  background-color: black;
+}
+#to-do {
+  width: 15%;
+  position: absolute;
+  right: 10%;
+  top: 2.5%;
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+  
+}
+h1 {
+  font-size: 2em;
+  font-family: "Arial, Helvetica, sans-serif";
+  padding: 0px;
+  padding-left: 1.5em;
+  line-height: 0.3em;
+  text-shadow: 5px 5px rgba(253, 252, 252, 0.308);
+}
+.image{
+position: absolute;
+}
+.img1{
+  top: 0%;
+  right: 10%;
+  width: 20%;
+}
+.img2{
+  top:-7%;
+  right: 0%;
+  width:25% ;
+}
+/*table*/
+main {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color:  rgb(228, 224, 224);
+  
+}
+#inp-task{
+height: 2em;
+margin: 0em 2em 1em 0em;
+outline: none;
+border-radius:5px ;
+height: 1em;
+width: 25%;
+background-color: rgb(228, 224, 224);
+border: none;
+border-bottom: 1px solid  rgb(172, 172, 172);
+font-size: 1.5em;
+box-shadow:rgba(70, 69, 69, 0.308) 0px 2px 0px; ;
+}
+.btn1 {
+  background-color: rgb(172, 172, 172);
+  font-size: 2em;
+  margin: 1em 0.2em 1em 1em;
+  border: 1px solid rgb(138, 137, 137);
+  border-radius: 5px;
+  -webkit-box-shadow: inset -1px 3px 8px 5px #5d5e5f, 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: inset -1px 3px 8px 5px #5d5e5f, 2px 5px 16px 0px #5b5b5c, 5px 5px 15px 5px rgba(0,0,0,0);
+  color: white;
+  cursor: pointer;
+}
+.btn1:hover{
+    background-color: grey;
+}
+
+.tbl {
+
+
+  margin:auto;
+  margin-left: 40%;
+  font-size: 2em;
+  color: rgb(150, 150, 150);
+}
+
+
+/*cards*/
+.item {
+ 
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0), 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0), 5px 5px 15px 5px rgba(0,0,0,0);
+  margin-right: 2%;
+  margin-top: 1.5%;
+  margin-bottom: 3%;
+  position: relative;
+  
+}
+.item:hover{
+  transform: scale(1.05);
+}
+.todo{
+   background-color: rgb(218, 193, 218);
+  }
+.active {
+  background-color: rgb(208, 247, 170);
+}
+.text{
+  font-size: 2em;
+  color: rgb(43, 42, 42);
+  text-align: center;
+  margin-top: 20%;
+  font-weight: bold;
+letter-spacing: .1em;
+text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.pin{
+  width: 20%;
+  position: absolute;
+  top:-4%;
+  right: 2%;
+}
+
+
+.btn0{
+  position: absolute;
+  bottom:5% ;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5em;
+
+}
+
+.btn01{
+  right: 5%;
+  background-color: chartreuse;
+  -webkit-box-shadow: inset -1px 3px 8px 5px rgb(124, 228, 20), 2px 5px 16px 0px rgb(56, 100, 12), 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: inset -1px 3px 8px 5px rgb(124, 228, 20), 2px 5px 16px 0px px rgb(56, 100, 12), 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.btn01:active{
+  background-color: rgb(84, 121, 48);
+}
+.btn02{
+  right: 23%;
+  background-color: rgb(238, 115, 67);
+  -webkit-box-shadow: inset -1px 3px 8px 5px  rgb(247, 104, 47), 2px 5px 16px 0px  rgb(151, 59, 23), 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: inset -1px 3px 8px 5px rgb(247, 104, 47), 2px 5px 16px 0px rgb(151, 59, 23), 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+/*grid*/
+
+.row {
+  width: 90%;
+  margin: auto;
+  
+}
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+.col {
+  width: 23%;
+ min-height: 200px;
+  float: left;
+}
+
+@media (max-width: 1100px) {
+  .col {
+    width: 31%;
+   min-height: 200px;
+    float: left;
+  } 
+
+
+}
+
+@media (max-width: 970px) {
+  .col {
+    width: 42%;
+   min-height: 200px;
+    float: left;
+    margin-left: 5%;
+  } 
+  #inp-task{
+    width: 45%;
+  }
+}
+
+@media (max-width: 700px) {
+  .col {
+    width: 60%;
+   min-height: 200px;
+    float: left;
+    margin-left: 20%;
+  } 
+  #inp-task{
+    width: 55%;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .col {
+    width: 80%;
+   min-height: 200px;
+    float: left;
+    margin-left: 10%;
+  } 
+  #inp-task{
+    width: 55%;
+  }
+}
